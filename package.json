@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "mongoose": "^8.8.1"
+    "mongoose": "^8.8.1",
+    "vitest": "^2.1.5"
   }
 }

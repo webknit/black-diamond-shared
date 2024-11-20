@@ -1,0 +1,123 @@
+export interface TeamStat {
+  team: {
+    id: number;
+    name: string;
+    logo: string;
+  };
+  biggest: {
+    streak: {
+      wins: number;
+      draws: number;
+      loses: number;
+    };
+    wins: {
+      home: string;
+      away: string;
+    };
+    loses: {
+      home: string;
+      away: string;
+    };
+    goals: {
+      for: {
+        home: number;
+        away: number;
+      };
+      against: {
+        home: number;
+        away: number;
+      };
+    };
+  };
+  cards: {
+    yellow: Record<string, { total: number; percentage: string }>;
+    red: Record<string, { total: number; percentage: string }>;
+  };
+  clean_sheet: {
+    home: number;
+    away: number;
+    total: number;
+  };
+  createdAt: Date;
+  failed_to_score: {
+    home: number;
+    away: number;
+    total: number;
+  };
+  fixtures: {
+    played: {
+      home: number;
+      away: number;
+      total: number;
+    };
+    wins: {
+      home: number;
+      away: number;
+      total: number;
+    };
+    draws: {
+      home: number;
+      away: number;
+      total: number;
+    };
+    loses: {
+      home: number;
+      away: number;
+      total: number;
+    };
+  };
+  form: string;
+  goals: {
+    for: {
+      total: {
+        home: number;
+        away: number;
+        total: number;
+      };
+      average: {
+        home: string;
+        away: string;
+        total: string;
+      };
+      minute: Record<string, { total: number; percentage: string }>;
+      under_over: Record<string, { over: number; under: number }>;
+    };
+    against: {
+      total: {
+        home: number;
+        away: number;
+        total: number;
+      };
+      average: {
+        home: string;
+        away: string;
+        total: string;
+      };
+      minute: Record<string, { total: number; percentage: string }>;
+      under_over: Record<string, { over: number; under: number }>;
+    };
+  };
+  league: {
+    id: number;
+    name: string;
+    country: string;
+    logo: string;
+    flag: string;
+    season: number;
+  };
+  lineups: {
+    formation: string;
+    played: number;
+  }[];
+  penalty: {
+    scored: {
+      total: number;
+      percentage: string;
+    };
+    missed: {
+      total: number;
+      percentage: string;
+    };
+    total: number;
+  };
+}

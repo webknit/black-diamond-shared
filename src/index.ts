@@ -1,2 +1,6 @@
 export * from "./data/league";
-export * from "./utils/apiFootball";
+export * from "./data/team";
+export * from "./data/fixture";
+export * from "./data/teamStat";
+
+export * from "./utils/";
