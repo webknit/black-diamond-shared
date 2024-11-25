@@ -120,4 +120,5 @@ export interface TeamStat {
     };
     total: number;
   };
+  leaguePosition: number;
 }

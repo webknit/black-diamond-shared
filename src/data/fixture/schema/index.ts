@@ -17,6 +17,15 @@ export const fixtureSchema = new Schema(
     score: {
       type: Schema.Types.Mixed,
     },
+    odds: {
+      type: Schema.Types.Mixed,
+    },
+    apiPredictions: {
+      type: Schema.Types.Mixed,
+    },
+    teamStats: {
+      type: Schema.Types.Mixed,
+    },
     // refs: {
     //   refHomeTeamStat: {
     //     type: Schema.Types.ObjectId,
