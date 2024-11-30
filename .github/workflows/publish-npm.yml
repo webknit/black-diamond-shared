@@ -32,7 +32,7 @@ jobs:
       - name: "Bump the version"
         run: npm version ${{inputs.version}} --no-git-tag-version
       - name: "Publish to npm"
-        run: npm publish --provenance --access public
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Get new version
