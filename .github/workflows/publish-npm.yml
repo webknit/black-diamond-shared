@@ -35,3 +35,13 @@ jobs:
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Get new version
+        id: new-version
+        uses: martinbeentjes/npm-get-version-action@main
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: version ${{ steps.new-version.outputs.current-version}}
+          commit_user_name: webknit
+          commit_user_email: contact@webknit.co.uk
+          tagging_message: "v${{ steps.new-version.outputs.current-version }}"
+          push_options: "--force"
