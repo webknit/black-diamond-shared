@@ -7,46 +7,50 @@ export interface League {
     code?: string;
     flag?: string;
   };
-  stats?: {
+  stats: {
     played: number;
     goals: number;
+    goalsPerGame: {
+      mean: number;
+      mode: number;
+      median: number;
+    };
     wins: {
-      value: number;
-      percent: string;
+      total: number;
+      percent: number;
     };
     draws: {
-      value: number;
-      percent: string;
-    };
-    nilnil: {
-      value: number;
-      percent: string;
+      total: number;
+      percent: number;
     };
     BTTS: {
-      value: number;
-      percent: string;
+      total: number;
+      percent: number;
     };
-    over0Goal: {
-      value: number;
-      percent: string;
+    over0_5: {
+      total: number;
+      percent: number;
     };
-    over1Goal: {
-      value: number;
-      percent: string;
+    over1_5: {
+      total: number;
+      percent: number;
     };
-    over2Goal: {
-      value: number;
-      percent: string;
+    over2_5: {
+      total: number;
+      percent: number;
     };
-    under2Goal: {
-      value: number;
-      percent: string;
+    under0_5: {
+      total: number;
+      percent: number;
     };
-    under3Goal: {
-      value: number;
-      percent: string;
+    under1_5: {
+      total: number;
+      percent: number;
     };
-    goalsPerGame: string;
+    under2_5: {
+      total: number;
+      percent: number;
+    };
   };
   currentSeason?: number;
 }
