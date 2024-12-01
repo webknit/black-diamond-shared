@@ -1,6 +1,6 @@
 {
   "name": "black-diamond-shared",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "description": "Shared code between Black Diamond repositories",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
