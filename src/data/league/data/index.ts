@@ -39,4 +39,12 @@ export const LEAGUE_ID_LIST = [
   203, // Turkey Süper Lig
   365, // Virsliga Latvia
   357, // Ireland Premier division
+  106, // Polish Ekstraklasa
+  283, // Romania Liga 1
+  218, // Austria Bundesliga
+  119, // Denmark Superliga
+  344, // Bolivia Primera División
+  323, // Indian Super League
+  274, // Indonesia Liga 1
+  274, // Algeria Ligue 1
 ];
