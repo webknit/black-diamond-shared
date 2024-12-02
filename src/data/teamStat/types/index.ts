@@ -121,4 +121,5 @@ export interface TeamStat {
     total: number;
   };
   leaguePosition: number;
+  leagueTeams: number;
 }

@@ -2,6 +2,7 @@ import { Schema } from "mongoose";
 
 export const teamStatSchema = new Schema(
   {
+    leagueTeams: { type: Number },
     leaguePosition: { type: Number },
     team: {
       id: { type: Number, required: true },
