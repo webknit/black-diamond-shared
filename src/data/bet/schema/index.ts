@@ -24,26 +24,10 @@ export const betSchema = new Schema(
       ],
       required: true,
     },
-    betName: {
-      type: String,
-      required: true,
-    },
-    // bookie: {
-    //   type: String,
-    //   required: true,
-    // },
-    fixture: {
-      type: Schema.Types.ObjectId,
-      ref: "Fixture",
-    },
     stake: {
       type: Number,
       required: true,
     },
-    // isInPlay: {
-    //   type: Boolean,
-    //   required: true,
-    // },
     isMatched: {
       type: Boolean,
     },

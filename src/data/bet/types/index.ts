@@ -7,6 +7,7 @@ export interface Bet {
     odds: number;
     winner?: boolean;
   }[];
+  odds: number;
   stake: number;
   winner?: boolean;
   winAmount?: number;
