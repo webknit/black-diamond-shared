@@ -1,6 +1,7 @@
-import { Document, Schema } from "mongoose";
+import { Schema } from "mongoose";
+import { MongoDocument } from "../../.shared/types/mongoDocument";
 
-export interface Bet extends Document {
+export interface Bet extends MongoDocument {
   selections: {
     betName: string;
     fixture: Schema.Types.ObjectId;

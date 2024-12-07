@@ -1,5 +1,6 @@
-import { Document } from "mongoose";
 import { TeamStat } from "../../teamStat";
+
+import { MongoDocument } from "../../.shared/types/mongoDocument";
 
 interface FixtureFixture {
   id: number;
@@ -273,7 +274,7 @@ interface Odds {
   };
 }
 
-export interface Fixture extends Document {
+export interface Fixture extends MongoDocument {
   fixture: FixtureFixture;
   league: League;
   teams: Teams;

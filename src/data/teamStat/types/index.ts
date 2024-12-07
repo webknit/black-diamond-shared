@@ -1,6 +1,5 @@
-import { Document } from "mongoose";
-
-export interface TeamStat extends Document {
+import { MongoDocument } from "../../.shared/types/mongoDocument";
+export interface TeamStat extends MongoDocument {
   team: {
     id: number;
     name: string;

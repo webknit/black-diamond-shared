@@ -1,6 +1,6 @@
-import { Document } from "mongoose";
+import { MongoDocument } from "../../.shared/types/mongoDocument";
 
-export interface League extends Document {
+export interface League extends MongoDocument {
   id: number;
   name?: string;
   logo?: string;
