@@ -1,4 +1,6 @@
-export interface League {
+import { Document } from "mongoose";
+
+export interface League extends Document {
   id: number;
   name?: string;
   logo?: string;

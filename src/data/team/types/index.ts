@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import mongoose, { Document } from "mongoose";
 
-export interface Team {
+export interface Team extends Document {
   id: number;
   name: string;
   logo: string;

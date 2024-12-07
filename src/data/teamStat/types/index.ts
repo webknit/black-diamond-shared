@@ -1,4 +1,6 @@
-export interface TeamStat {
+import { Document } from "mongoose";
+
+export interface TeamStat extends Document {
   team: {
     id: number;
     name: string;

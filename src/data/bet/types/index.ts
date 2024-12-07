@@ -1,6 +1,6 @@
-import { Schema } from "mongoose";
+import { Document, Schema } from "mongoose";
 
-export interface Bet {
+export interface Bet extends Document {
   selections: {
     betName: string;
     fixture: Schema.Types.ObjectId;
