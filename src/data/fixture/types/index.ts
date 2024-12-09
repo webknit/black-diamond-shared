@@ -285,6 +285,7 @@ export interface Fixture extends MongoDocument {
     home: TeamStat;
     away: TeamStat;
   };
+  apiPredictions?: ApiPredictions;
   // refs?: {
   //   refHomeTeamStat?: string;
   //   refAwayTeamStat?: string;
@@ -301,4 +302,236 @@ export interface Fixture extends MongoDocument {
   // topBets?: any;
   // keyStats?: any;
   // info?: any;
+}
+
+interface TeamLast5 {
+  played: number;
+  form: string;
+  att: string;
+  def: string;
+  goals: {
+    for: {
+      total: number;
+      average: string;
+    };
+    against: {
+      total: number;
+      average: string;
+    };
+  };
+}
+
+interface TeamLeague {
+  form: string;
+  fixtures: {
+    played: {
+      home: number;
+      away: number;
+      total: number;
+    };
+    wins: {
+      home: number;
+      away: number;
+      total: number;
+    };
+    draws: {
+      home: number;
+      away: number;
+      total: number;
+    };
+    loses: {
+      home: number;
+      away: number;
+      total: number;
+    };
+  };
+  goals: {
+    for: {
+      total: {
+        home: number;
+        away: number;
+        total: number;
+      };
+      average: {
+        home: string;
+        away: string;
+        total: string;
+      };
+      minute: {
+        [key: string]: {
+          total: number | null;
+          percentage: string | null;
+        };
+      };
+      under_over: {
+        [key: string]: {
+          over: number;
+          under: number;
+        };
+      };
+    };
+    against: {
+      total: {
+        home: number;
+        away: number;
+        total: number;
+      };
+      average: {
+        home: string;
+        away: string;
+        total: string;
+      };
+      minute: {
+        [key: string]: {
+          total: number | null;
+          percentage: string | null;
+        };
+      };
+      under_over: {
+        [key: string]: {
+          over: number;
+          under: number;
+        };
+      };
+    };
+  };
+  biggest: {
+    streak: {
+      wins: number;
+      draws: number;
+      loses: number;
+    };
+    wins: {
+      home: string;
+      away: string;
+    };
+    loses: {
+      home: string;
+      away: string;
+    };
+    goals: {
+      for: {
+        home: number;
+        away: number;
+      };
+      against: {
+        home: number;
+        away: number;
+      };
+    };
+  };
+  clean_sheet: {
+    home: number;
+    away: number;
+    total: number;
+  };
+  failed_to_score: {
+    home: number;
+    away: number;
+    total: number;
+  };
+  penalty: {
+    scored: {
+      total: number;
+      percentage: string;
+    };
+    missed: {
+      total: number;
+      percentage: string;
+    };
+    total: number;
+  };
+  lineups: {
+    formation: string;
+    played: number;
+  }[];
+  cards: {
+    yellow: {
+      [key: string]: {
+        total: number | null;
+        percentage: string | null;
+      };
+    };
+    red: {
+      [key: string]: {
+        total: number | null;
+        percentage: string | null;
+      };
+    };
+  };
+}
+
+interface TeamData {
+  id: number;
+  name: string;
+  logo: string;
+  last_5: TeamLast5;
+  league: TeamLeague;
+}
+
+interface Comparison {
+  form: {
+    home: string;
+    away: string;
+  };
+  att: {
+    home: string;
+    away: string;
+  };
+  def: {
+    home: string;
+    away: string;
+  };
+  poisson_distribution: {
+    home: string;
+    away: string;
+  };
+  h2h: {
+    home: string;
+    away: string;
+  };
+  goals: {
+    home: string;
+    away: string;
+  };
+  total: {
+    home: string;
+    away: string;
+  };
+}
+
+interface H2HFixture {
+  fixture: FixtureFixture;
+  league: League;
+  teams: Teams;
+  goals: Goals;
+  score: Score;
+}
+
+interface ApiPredictions {
+  predictions: {
+    winner: {
+      id: number;
+      name: string;
+      comment: string;
+    };
+    win_or_draw: boolean;
+    under_over: string;
+    goals: {
+      home: string;
+      away: string;
+    };
+    advice: string;
+    percent: {
+      home: string;
+      draw: string;
+      away: string;
+    };
+  };
+  teams: {
+    home: TeamData;
+    away: TeamData;
+  };
+  comparison: Comparison;
+  h2h: H2HFixture[];
 }
