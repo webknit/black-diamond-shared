@@ -1,5 +1,6 @@
 import { Schema } from "mongoose";
 import { MongoDocument } from "../../.shared/types/mongoDocument";
+import { betTypes } from "../data";
 
 export interface Bet extends MongoDocument {
   selections: {
@@ -16,3 +17,5 @@ export interface Bet extends MongoDocument {
   settled?: boolean;
   isMatched?: boolean;
 }
+
+export type BetTypes = keyof typeof betTypes;
