@@ -5,7 +5,6 @@ export const betSchema = new Schema(
     selections: {
       type: [
         {
-          _id: { id: false },
           betType: {
             type: String,
             required: true,
@@ -21,6 +20,7 @@ export const betSchema = new Schema(
           winner: {
             type: Boolean,
           },
+          _id: false,
         },
       ],
       required: true,
