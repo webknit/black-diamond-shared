@@ -4,24 +4,26 @@ export const betSchema = new Schema(
   {
     selections: {
       type: [
-        {
-          betType: {
-            type: String,
-            required: true,
+        new Schema(
+          {
+            betType: {
+              type: String,
+              required: true,
+            },
+            fixture: {
+              type: Schema.Types.ObjectId,
+              ref: "Fixture",
+            },
+            odds: {
+              type: Number,
+              required: true,
+            },
+            winner: {
+              type: Boolean,
+            },
           },
-          fixture: {
-            type: Schema.Types.ObjectId,
-            ref: "Fixture",
-          },
-          odds: {
-            type: Number,
-            required: true,
-          },
-          winner: {
-            type: Boolean,
-          },
-          _id: false,
-        },
+          { _id: false }
+        ),
       ],
       required: true,
     },
