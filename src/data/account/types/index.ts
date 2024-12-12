@@ -2,7 +2,7 @@ export interface Account {
   email: string;
   password: string;
   balance: number;
-  outstandingBets?: number;
+  outstandingBets: number;
   depositTotal: number;
   deposits: any[];
   expensesTotal: number;
