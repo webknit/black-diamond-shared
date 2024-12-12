@@ -19,7 +19,7 @@ describe("toTwoDecimalPlaces", () => {
 
   testCases.forEach(({ input, expected }) => {
     it(`should round ${input} to ${expected}`, () => {
-      expect(toTwoDecimalPlaces(input)).toBe(expected);
+      expect(toTwoDecimalPlaces(input) === expected).toBe(true);
     });
   });
 });

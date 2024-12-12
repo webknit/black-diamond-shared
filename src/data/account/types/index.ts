@@ -1,10 +1,10 @@
 export interface Account {
   email: string;
   password: string;
-  balance?: number;
+  balance: number;
   outstandingBets?: number;
-  depositTotal?: number;
-  deposits?: any[];
-  expensesTotal?: number;
+  depositTotal: number;
+  deposits: any[];
+  expensesTotal: number;
   expenses: any[];
 }
