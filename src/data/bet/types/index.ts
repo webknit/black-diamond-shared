@@ -3,7 +3,7 @@ import { MongoDocument } from "../../.shared/types/mongoDocument";
 import { betTypes } from "../data";
 
 export interface BetSelection {
-  betType: string;
+  betType: BetTypes;
   fixture: Schema.Types.ObjectId;
   odds: number;
   winner?: boolean;
