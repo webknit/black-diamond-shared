@@ -4,7 +4,7 @@ import { betTypes } from "../data";
 
 export interface BetSelection {
   betType: BetTypes;
-  fixture: Schema.Types.ObjectId;
+  fixture: string;
   odds: number;
   winner?: boolean;
 }
