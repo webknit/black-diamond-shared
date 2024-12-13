@@ -5,13 +5,17 @@ import { Fixture } from "../../fixture";
 describe("checkBetWin", () => {
   const createFixture = (homeScore: number, awayScore: number): Fixture =>
     ({
-      score: {
-        fulltime: {
-          home: homeScore,
-          away: awayScore,
-        },
+      goals: {
+        home: homeScore,
+        away: awayScore,
       },
-    } as Fixture);
+      fixture: {},
+      league: {},
+      teams: {},
+      events: [],
+      status: {},
+      referee: {},
+    } as unknown as Fixture);
 
   it("should return true for homeWin bet type when home team wins", () => {
     const fixture = createFixture(2, 1);
