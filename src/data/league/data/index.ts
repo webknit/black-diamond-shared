@@ -28,7 +28,7 @@ export const LEAGUE_ID_LIST = [
   207, // Switz super league
   98, // J1 League Japan
   292, // K League 1
-  333, // Ukraine premier league
+  //333, // Ukraine premier league
   128, // Argentine Primera División
   169, // China super league
   233, // Egypt premier leaguye
