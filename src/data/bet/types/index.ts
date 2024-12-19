@@ -1,6 +1,11 @@
 import { Schema } from "mongoose";
 import { MongoDocument } from "../../.shared/types/mongoDocument";
 import { betTypes } from "../data";
+import { Fixture } from "../../fixture";
+
+export interface BetSelectionWithFixture extends Omit<A, "fixture"> {
+  fixture: Fixture;
+}
 
 export interface BetSelection {
   betType: BetTypes;
