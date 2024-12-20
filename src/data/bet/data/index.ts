@@ -89,6 +89,16 @@ export const betTypes = {
     nameWithTitle: "5.5",
     label: "Under 5.5",
   },
+  over6_5: {
+    shortName: "Over 6.5",
+    nameWithTitle: "6.5",
+    label: "Over 6.5",
+  },
+  under6_5: {
+    shortName: "Under 6.5",
+    nameWithTitle: "6.5",
+    label: "Under 6.5",
+  },
   BTTS: {
     shortName: "BTTS",
     nameWithTitle: "BTTS",
