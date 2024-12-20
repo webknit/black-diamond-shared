@@ -57,7 +57,7 @@ export const checkBetWin = (betType: BetTypes, fixture: Fixture) => {
   }
 
   if (betType === "under6_5") {
-    return fixture.goals.home + fixture.goals.away < 6;
+    return fixture.goals.home + fixture.goals.away < 7;
   }
 
   if (betType === "over0_5") {
