@@ -5,6 +5,6 @@ export interface Account {
   outstandingBets: number;
   depositTotal: number;
   deposits: any[];
-  expensesTotal: number;
+  expenseTotal: number;
   expenses: any[];
 }
