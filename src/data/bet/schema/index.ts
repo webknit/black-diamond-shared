@@ -48,6 +48,9 @@ export const betSchema = new Schema(
     settled: {
       type: Boolean,
     },
+    cashout: {
+      type: Boolean,
+    },
     cashoutAmount: {
       type: Number,
     },

@@ -23,6 +23,7 @@ export interface Bet extends MongoDocument {
   commissionAmount?: number;
   settled?: boolean;
   isMatched?: boolean;
+  cashout?: Boolean;
   cashoutAmount?: number;
 }
 
