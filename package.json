@@ -1,6 +1,6 @@
 {
   "name": "black-diamond-shared",
-  "version": "1.0.44",
+  "version": "1.0.45",
   "description": "Shared code between Black Diamond repositories",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
