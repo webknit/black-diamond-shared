@@ -53,4 +53,5 @@ export const LEAGUE_ID_LIST = [
   4, // EURO Championship
   8, //World Cup - Women
   5, // UEFA Nations League
+  848, // UEFA Europa Conference League
 ];
