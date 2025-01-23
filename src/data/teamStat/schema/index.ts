@@ -138,6 +138,8 @@ export const teamStatSchema = new Schema(
       },
     },
     form: { type: String },
+    formHome: { type: String },
+    formAway: { type: String },
     goals: {
       for: {
         total: {
