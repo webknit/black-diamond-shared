@@ -67,9 +67,9 @@ export interface TeamStat extends MongoDocument {
       total: number;
     };
   };
-  form: string;
-  formHome: string;
-  formAway: string;
+  form: ("W" | "L" | "D")[];
+  formHome: ("W" | "L" | "D")[];
+  formAway: ("W" | "L" | "D")[];
   goals: {
     for: {
       total: {
