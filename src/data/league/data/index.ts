@@ -47,4 +47,9 @@ export const LEAGUE_ID_LIST = [
   323, // Indian Super League
   274, // Indonesia Liga 1
   274, // Algeria Ligue 1
+  2, // UEFA Champions League
+  3, // UEFA Europa League
+  1, //World Cup
+  4, // EURO Championship
+  8, //World Cup - Women
 ];
