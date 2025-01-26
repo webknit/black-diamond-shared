@@ -282,8 +282,8 @@ export interface Fixture extends MongoDocument {
   score: Score;
   odds: Odds;
   teamStats?: {
-    home: TeamStat;
-    away: TeamStat;
+    home?: TeamStat;
+    away?: TeamStat;
   };
   apiPredictions?: ApiPredictions;
   // refs?: {
