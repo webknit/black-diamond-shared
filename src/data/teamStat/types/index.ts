@@ -125,4 +125,5 @@ export interface TeamStat extends MongoDocument {
   };
   leaguePosition: number;
   leagueTeams: number;
+  leaguePoints: number;
 }

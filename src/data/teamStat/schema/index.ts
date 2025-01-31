@@ -4,6 +4,7 @@ export const teamStatSchema = new Schema(
   {
     leagueTeams: { type: Number },
     leaguePosition: { type: Number },
+    leaguePoints: { type: Number },
     team: {
       id: { type: Number, required: true },
       name: { type: String, required: true },
