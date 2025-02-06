@@ -2,6 +2,13 @@ import { Schema } from "mongoose";
 
 export const teamStatSchema = new Schema(
   {
+    prevFixtures: {
+      recent: {
+        home: { type: Array },
+        away: { type: Array },
+      },
+      all: { type: Array },
+    },
     leagueTeams: { type: Number },
     leaguePosition: { type: Number },
     leaguePoints: { type: Number },

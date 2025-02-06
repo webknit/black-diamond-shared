@@ -1,5 +1,12 @@
 import { MongoDocument } from "../../.shared/types/mongoDocument";
 export interface TeamStat extends MongoDocument {
+  prevFixtures: {
+    recent: {
+      home: string[];
+      away: string[];
+    };
+    all: string[];
+  };
   team: {
     id: number;
     name: string;
