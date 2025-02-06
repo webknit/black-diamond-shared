@@ -1,7 +1,7 @@
 import { Schema } from "mongoose";
 import { MongoDocument } from "../../.shared/types/mongoDocument";
 export interface TeamStat extends MongoDocument {
-  prevFixtures: {
+  prevFixtures?: {
     home?: string[];
     away?: string[];
     all: string[];
