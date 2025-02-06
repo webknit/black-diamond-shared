@@ -1,11 +1,21 @@
+import { Schema } from "mongoose";
 import { MongoDocument } from "../../.shared/types/mongoDocument";
 export interface TeamStat extends MongoDocument {
   prevFixtures: {
     recent: {
-      home: string[];
-      away: string[];
+      home: {
+        type: Schema.Types.ObjectId;
+        ref: "Fixture";
+      }[];
+      away: {
+        type: Schema.Types.ObjectId;
+        ref: "Fixture";
+      }[];
     };
-    all: string[];
+    all: {
+      type: Schema.Types.ObjectId;
+      ref: "Fixture";
+    }[];
   };
   team: {
     id: number;
