@@ -27,7 +27,7 @@ export const fixtureSchema = new Schema(
       type: Schema.Types.Mixed,
     },
     prevFixtures: {
-      home: {
+      homeTeam: {
         home: [
           {
             type: Schema.Types.ObjectId,
@@ -41,7 +41,7 @@ export const fixtureSchema = new Schema(
           },
         ],
       },
-      away: {
+      awayTeam: {
         away: [
           {
             type: Schema.Types.ObjectId,

@@ -287,11 +287,11 @@ export interface Fixture extends MongoDocument {
   };
   apiPredictions?: ApiPredictions;
   prevFixtures?: {
-    home?: {
+    homeTeam?: {
       home?: string[];
       all?: string[];
     };
-    away?: {
+    awayTeam?: {
       away?: string[];
       all?: string[];
     };
