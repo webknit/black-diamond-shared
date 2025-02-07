@@ -288,12 +288,12 @@ export interface Fixture extends MongoDocument {
   apiPredictions?: ApiPredictions;
   prevFixtures?: {
     home?: {
-      home: string[];
-      all: string[];
+      home?: string[];
+      all?: string[];
     };
     away?: {
-      away: string[];
-      all: string[];
+      away?: string[];
+      all?: string[];
     };
   };
   // refs?: {
