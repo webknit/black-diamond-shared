@@ -28,7 +28,6 @@ export const fixtureSchema = new Schema(
     },
     prevFixtures: {
       home: {
-        required: false,
         home: [
           {
             type: Schema.Types.ObjectId,
@@ -43,7 +42,6 @@ export const fixtureSchema = new Schema(
         ],
       },
       away: {
-        required: false,
         away: [
           {
             type: Schema.Types.ObjectId,
