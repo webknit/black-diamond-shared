@@ -54,4 +54,6 @@ export const LEAGUE_ID_LIST = [
   8, //World Cup - Women
   5, // UEFA Nations League
   848, // UEFA Europa Conference League
+  45, // FA Cup
+  48, // League Cup (Caribo Cup)
 ];
