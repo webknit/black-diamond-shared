@@ -27,24 +27,34 @@ export const fixtureSchema = new Schema(
       type: Schema.Types.Mixed,
     },
     prevFixtures: {
-      home: [
-        {
-          type: Schema.Types.ObjectId,
-          ref: "Fixture",
-        },
-      ],
-      away: [
-        {
-          type: Schema.Types.ObjectId,
-          ref: "Fixture",
-        },
-      ],
-      all: [
-        {
-          type: Schema.Types.ObjectId,
-          ref: "Fixture",
-        },
-      ],
+      home: {
+        home: [
+          {
+            type: Schema.Types.ObjectId,
+            ref: "Fixture",
+          },
+        ],
+        all: [
+          {
+            type: Schema.Types.ObjectId,
+            ref: "Fixture",
+          },
+        ],
+      },
+      away: {
+        away: [
+          {
+            type: Schema.Types.ObjectId,
+            ref: "Fixture",
+          },
+        ],
+        all: [
+          {
+            type: Schema.Types.ObjectId,
+            ref: "Fixture",
+          },
+        ],
+      },
     },
     // refs: {
     //   refHomeTeamStat: {
