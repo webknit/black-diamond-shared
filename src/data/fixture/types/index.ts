@@ -286,16 +286,7 @@ export interface Fixture extends MongoDocument {
     away?: TeamStat;
   };
   apiPredictions?: ApiPredictions;
-  prevFixtures?: {
-    homeTeam?: {
-      home?: string[];
-      all?: string[];
-    };
-    awayTeam?: {
-      away?: string[];
-      all?: string[];
-    };
-  };
+  prevFixtures?: PrevFixtures;
   // refs?: {
   //   refHomeTeamStat?: string;
   //   refAwayTeamStat?: string;
@@ -314,6 +305,16 @@ export interface Fixture extends MongoDocument {
   // info?: any;
 }
 
+interface PrevFixtures {
+  homeTeam?: {
+    home?: string[] | Fixture;
+    all?: string[] | Fixture;
+  };
+  awayTeam?: {
+    away?: string[] | Fixture;
+    all?: string[] | Fixture;
+  };
+}
 interface TeamLast5 {
   played: number;
   form: string;
