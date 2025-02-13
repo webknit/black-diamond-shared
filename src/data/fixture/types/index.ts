@@ -307,12 +307,12 @@ export interface Fixture extends MongoDocument {
 
 interface PrevFixtures {
   homeTeam?: {
-    home?: string[] | Fixture;
-    all?: string[] | Fixture;
+    home?: string[] | Fixture[];
+    all?: string[] | Fixture[];
   };
   awayTeam?: {
-    away?: string[] | Fixture;
-    all?: string[] | Fixture;
+    away?: string[] | Fixture[];
+    all?: string[] | Fixture[];
   };
 }
 interface TeamLast5 {
