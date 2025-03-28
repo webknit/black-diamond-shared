@@ -1,4 +1,4 @@
-import { BetTypes } from "../../bet/data";
+import { BetTypes } from "../../bet/types";
 
 export interface BetStat {
   betType: BetTypes;
