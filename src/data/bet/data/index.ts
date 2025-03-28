@@ -110,5 +110,3 @@ export const betTypesInfo = {
     label: "BTNTS",
   },
 };
-
-export type BetTypes = keyof typeof betTypesInfo;

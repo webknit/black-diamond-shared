@@ -1,6 +1,5 @@
-import { Schema } from "mongoose";
 import { MongoDocument } from "../../.shared/types/mongoDocument";
-import { betTypes } from "../data";
+import { betTypesInfo } from "../data";
 import { Fixture } from "../../fixture";
 
 export interface BetSelectionWithFixture extends Omit<BetSelection, "fixture"> {
@@ -27,4 +26,4 @@ export interface Bet extends MongoDocument {
   cashoutAmount?: number;
 }
 
-export type BetTypes = keyof typeof betTypes;
+export type BetTypes = keyof typeof betTypesInfo;
