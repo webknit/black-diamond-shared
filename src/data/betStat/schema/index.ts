@@ -2,7 +2,7 @@ import { Schema } from "mongoose";
 
 export const betStatSchema = new Schema(
   {
-    name: {
+    betType: {
       type: Schema.Types.String,
     },
     betWins: {
