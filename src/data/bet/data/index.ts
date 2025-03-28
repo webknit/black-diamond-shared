@@ -1,4 +1,4 @@
-export const betTypes = {
+export const betTypesInfo = {
   homeWin: {
     shortName: "H",
     nameWithTitle: "H",
@@ -110,3 +110,5 @@ export const betTypes = {
     label: "BTNTS",
   },
 };
+
+export type BetTypes = keyof typeof betTypesInfo;
