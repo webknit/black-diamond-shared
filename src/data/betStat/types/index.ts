@@ -3,7 +3,11 @@ import { BetTypes } from "../../bet/types";
 export interface BetStat {
   betType: BetTypes;
   betWins: {
-    overall: any;
+    overall: {
+      count: number;
+      percent: number;
+      minOdds: number;
+    };
     at_odds: [
       {
         odds: number;
