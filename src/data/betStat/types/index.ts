@@ -6,7 +6,7 @@ export interface BetStat {
     overall: {
       count: number;
       percent: number;
-      minOdds: number;
+      odds: number;
     };
     at_odds: [
       {
