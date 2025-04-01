@@ -1,5 +1,5 @@
-import { Schema } from "mongoose";
 import { BetTypes } from "../../bet/types";
+import { League } from "../../league";
 
 export interface BetStat {
   betType: BetTypes;
@@ -20,10 +20,7 @@ export interface BetStat {
     ];
     per_league: [
       {
-        league: {
-          type: Schema.Types.ObjectId;
-          ref: "Fixture";
-        };
+        league: League;
         percent: number;
       }
     ];
