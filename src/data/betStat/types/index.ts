@@ -1,3 +1,4 @@
+import { Schema } from "mongoose";
 import { BetTypes } from "../../bet/types";
 
 export interface BetStat {
@@ -11,12 +12,18 @@ export interface BetStat {
     at_odds: [
       {
         odds: number;
-        percent: number;
+        games: number;
+        wins: number;
+        percentWins: number;
+        expectedOdds: number;
       }
     ];
     per_league: [
       {
-        leagueId: number;
+        league: {
+          type: Schema.Types.ObjectId;
+          ref: "Fixture";
+        };
         percent: number;
       }
     ];
