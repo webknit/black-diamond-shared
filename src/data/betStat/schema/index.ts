@@ -27,6 +27,8 @@ export const betStatSchema = new Schema(
             ref: "League",
           },
           percent: { type: Number },
+          resetTacticBalance: { type: Number },
+          resetTacticPot: { type: Number },
         },
       ],
       based_on_prev: [
