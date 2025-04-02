@@ -1,4 +1,5 @@
 import { Schema } from "mongoose";
+import { av } from "vitest/dist/chunks/reporters.D7Jzd9GS";
 
 export const betStatSchema = new Schema(
   {
@@ -29,6 +30,7 @@ export const betStatSchema = new Schema(
           percent: { type: Number },
           resetTacticBalance: { type: Number },
           resetTacticPot: { type: Number },
+          averageOdds: { type: Number },
         },
       ],
       based_on_prev: [
