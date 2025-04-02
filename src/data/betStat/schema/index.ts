@@ -19,6 +19,8 @@ export const betStatSchema = new Schema(
           expectedOdds: { type: Number },
           resetTacticBalance: { type: Number },
           resetTacticPot: { type: Number },
+          resetTacticBalanceOverOdds: { type: Number },
+          resetTacticPotOverOdds: { type: Number },
         },
       ],
       per_league: [
