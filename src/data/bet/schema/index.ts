@@ -21,6 +21,9 @@ export const betSchema = new Schema(
           winner: {
             type: Boolean,
           },
+          isUnmatched: {
+            type: Boolean,
+          },
         },
       ],
       required: true,
