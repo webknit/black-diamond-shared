@@ -21,9 +21,6 @@ export const betSchema = new Schema(
           winner: {
             type: Boolean,
           },
-          isUnmatched: {
-            type: Boolean,
-          },
         },
       ],
       required: true,
@@ -32,7 +29,7 @@ export const betSchema = new Schema(
       type: Number,
       required: true,
     },
-    isMatched: {
+    isNotMatched: {
       type: Boolean,
     },
     odds: {
