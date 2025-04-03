@@ -6,34 +6,41 @@ export interface BetStat {
   betWins: {
     overall: {
       count: number;
-      percent: number;
-      odds: number;
+      winPercent: number;
+      averageOdds: number;
     };
     at_odds: [
       {
         odds: number;
         games: number;
         wins: number;
-        percentWins: number;
+        winPercent: number;
         expectedOdds: number;
+        resetTacticBalance: number;
+        resetTacticPot: number;
+        resetTacticBalanceOverOdds: number;
+        resetTacticPotOverOdds: number;
       }
     ];
     per_league: [
       {
         league: League;
-        percent: number;
+        winPercent: number;
+        averageOdds: number;
+        resetTacticBalance: number;
+        resetTacticPot: number;
       }
     ];
     based_on_prev: [
       {
         name: string;
-        percent: number;
+        winPercent: number;
       }
     ];
     based_on_team_pos: [
       {
         name: string;
-        percent: number;
+        winPercent: number;
       }
     ];
   };
