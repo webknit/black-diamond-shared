@@ -21,10 +21,9 @@ export interface Bet extends MongoDocument {
   winAmount?: number;
   commissionAmount?: number;
   settled?: boolean;
-  isMatched?: boolean;
   cashout?: Boolean;
   cashoutAmount?: number;
-  isUnmatched?: boolean;
+  isNotMatched?: boolean;
 }
 
 export type BetTypes = keyof typeof betTypesInfo;
