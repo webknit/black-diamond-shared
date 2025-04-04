@@ -20,6 +20,7 @@ export interface BetStat {
         resetTacticPot: number;
         resetTacticBalanceOverOdds: number;
         resetTacticPotOverOdds: number;
+        placingEveryBet: number;
       }
     ];
     per_league: [
