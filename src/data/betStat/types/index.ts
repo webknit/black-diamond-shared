@@ -20,10 +20,10 @@ export interface BetStat {
         resetTacticPot2x: number;
         resetTacticBalanceOverOdds2x: number;
         resetTacticPotOverOdds2x: number;
-        resetTacticBalance0_5x: number;
-        resetTacticPot0_5x: number;
-        resetTacticBalance0_3x: number;
-        resetTacticPot0_3x: number;
+        resetTacticBalance1_5x: number;
+        resetTacticPot1_5x: number;
+        resetTacticBalance1_3x: number;
+        resetTacticPot1_3x: number;
         placingEveryBet: number;
       }
     ];
