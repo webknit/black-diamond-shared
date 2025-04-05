@@ -16,10 +16,14 @@ export interface BetStat {
         wins: number;
         winPercent: number;
         expectedOdds: number;
-        resetTacticBalance: number;
-        resetTacticPot: number;
-        resetTacticBalanceOverOdds: number;
-        resetTacticPotOverOdds: number;
+        resetTacticBalance10x: number;
+        resetTacticPot10x: number;
+        resetTacticBalanceOverOdds10x: number;
+        resetTacticPotOverOdds10x: number;
+        resetTacticBalance5x: number;
+        resetTacticPot5x: number;
+        resetTacticBalance3x: number;
+        resetTacticPot3x: number;
         placingEveryBet: number;
       }
     ];
