@@ -29,7 +29,7 @@ export const betSchema = new Schema(
       type: Number,
       required: true,
     },
-    isNotMatched: {
+    unmatched: {
       type: Boolean,
     },
     odds: {
