@@ -45,6 +45,11 @@ export const betStatSchema = new Schema(
           averageOdds: { type: Number },
         },
       ],
+      betting_on_odds_higher_league_percent: {
+        games: { type: Number },
+        wins: { type: Number },
+        winPercent: { type: Number },
+      },
       based_on_prev: [
         {
           name: { type: String },

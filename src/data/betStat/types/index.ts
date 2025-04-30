@@ -40,6 +40,11 @@ export interface BetStat {
         resetTacticPot: number;
       }
     ];
+    betting_on_odds_higher_league_percen: {
+      games: number;
+      wins: number;
+      winPercent: number;
+    };
     based_on_prev: [
       {
         name: string;
