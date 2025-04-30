@@ -46,6 +46,10 @@ export interface BetStat {
       winPercent: number;
       oddsHigherLeagueResetTacticBalance2x: number;
       oddsHigherLeagueResetTacticPot2x: number;
+      oddsHigherLeagueResetTacticBalance1_5x: number;
+      oddsHigherLeagueResetTacticPot1_5x: number;
+      oddsHigherLeagueResetTacticBalance1_3x: number;
+      oddsHigherLeagueResetTacticPot1_3x: number;
     };
     based_on_prev: [
       {

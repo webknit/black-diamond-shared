@@ -51,6 +51,10 @@ export const betStatSchema = new Schema(
         winPercent: { type: Number },
         oddsHigherLeagueResetTacticBalance2x: { type: Number },
         oddsHigherLeagueResetTacticPot2x: { type: Number },
+        oddsHigherLeagueResetTacticBalance1_5x: { type: Number },
+        oddsHigherLeagueResetTacticPot1_5x: { type: Number },
+        oddsHigherLeagueResetTacticBalance1_3x: { type: Number },
+        oddsHigherLeagueResetTacticPot1_3x: { type: Number },
       },
       based_on_prev: [
         {
