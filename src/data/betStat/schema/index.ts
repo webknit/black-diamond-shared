@@ -45,17 +45,20 @@ export const betStatSchema = new Schema(
           averageOdds: { type: Number },
         },
       ],
-      betting_on_odds_higher_league_percent: {
-        games: { type: Number },
-        wins: { type: Number },
-        winPercent: { type: Number },
-        oddsHigherLeagueResetTacticBalance2x: { type: Number },
-        oddsHigherLeagueResetTacticPot2x: { type: Number },
-        oddsHigherLeagueResetTacticBalance1_5x: { type: Number },
-        oddsHigherLeagueResetTacticPot1_5x: { type: Number },
-        oddsHigherLeagueResetTacticBalance1_3x: { type: Number },
-        oddsHigherLeagueResetTacticPot1_3x: { type: Number },
-      },
+      betting_on_odds_higher_league_percent: [
+        {
+          games: { type: Number },
+          wins: { type: Number },
+          winPercent: { type: Number },
+          oddsHigherLeagueResetTacticBalance2x: { type: Number },
+          oddsHigherLeagueResetTacticPot2x: { type: Number },
+          oddsHigherLeagueResetTacticBalance1_5x: { type: Number },
+          oddsHigherLeagueResetTacticPot1_5x: { type: Number },
+          oddsHigherLeagueResetTacticBalance1_3x: { type: Number },
+          oddsHigherLeagueResetTacticPot1_3x: { type: Number },
+          date: { type: Date },
+        },
+      ],
       based_on_prev: [
         {
           name: { type: String },

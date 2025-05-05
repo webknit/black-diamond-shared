@@ -40,17 +40,20 @@ export interface BetStat {
         resetTacticPot: number;
       }
     ];
-    betting_on_odds_higher_league_percent: {
-      games: number;
-      wins: number;
-      winPercent: number;
-      oddsHigherLeagueResetTacticBalance2x: number;
-      oddsHigherLeagueResetTacticPot2x: number;
-      oddsHigherLeagueResetTacticBalance1_5x: number;
-      oddsHigherLeagueResetTacticPot1_5x: number;
-      oddsHigherLeagueResetTacticBalance1_3x: number;
-      oddsHigherLeagueResetTacticPot1_3x: number;
-    };
+    betting_on_odds_higher_league_percent: [
+      {
+        games: number;
+        wins: number;
+        winPercent: number;
+        oddsHigherLeagueResetTacticBalance2x: number;
+        oddsHigherLeagueResetTacticPot2x: number;
+        oddsHigherLeagueResetTacticBalance1_5x: number;
+        oddsHigherLeagueResetTacticPot1_5x: number;
+        oddsHigherLeagueResetTacticBalance1_3x: number;
+        oddsHigherLeagueResetTacticPot1_3x: number;
+        date: Date;
+      }
+    ];
     based_on_prev: [
       {
         name: string;
