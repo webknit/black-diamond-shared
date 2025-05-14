@@ -54,6 +54,8 @@ export interface BetStat {
         date: Date;
       }
     ];
+    // per_goals
+    // gf, ga, combined
     based_on_prev: [
       {
         name: string;
