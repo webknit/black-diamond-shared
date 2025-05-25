@@ -46,6 +46,10 @@ interface Stats {
   };
 }
 
+interface PrevStats extends Stats {
+  date: Date | string;
+}
+
 export interface League extends MongoDocument {
   id: number;
   name?: string;
@@ -56,6 +60,6 @@ export interface League extends MongoDocument {
     flag?: string;
   };
   stats: Stats;
-  prevStats?: Array<Stats & { date: string }>;
+  prevStats?: PrevStats[];
   currentSeason?: number;
 }
