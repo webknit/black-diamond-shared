@@ -27,6 +27,9 @@ export const leagueSchema = new Schema<League>(
     stats: {
       type: Schema.Types.Mixed,
     },
+    prevStats: {
+      type: Schema.Types.Mixed,
+    },
     currentSeason: {
       type: Number,
     },
