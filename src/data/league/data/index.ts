@@ -49,6 +49,7 @@ export const LEAGUE_ID_LIST = [
   274, // Algeria Ligue 1
   368, // singapore premier league
   307, // saudi pro league
+  210, // HNL Croatian Football League
   2, // UEFA Champions League
   3, // UEFA Europa League
   1, //World Cup
