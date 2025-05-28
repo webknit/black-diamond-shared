@@ -9,7 +9,7 @@ describe("checkBetWin", () => {
         home: homeScore,
         away: awayScore,
       },
-      schore: {
+      score: {
         fulltime: {
           home: homeScore,
           away: awayScore,
