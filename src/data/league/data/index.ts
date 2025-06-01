@@ -59,4 +59,5 @@ export const LEAGUE_ID_LIST = [
   848, // UEFA Europa Conference League
   45, // FA Cup
   48, // League Cup (Caribo Cup)
+  15, // FIFA Club World Cup
 ];
