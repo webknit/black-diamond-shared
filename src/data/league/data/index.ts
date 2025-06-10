@@ -60,4 +60,12 @@ export const LEAGUE_ID_LIST = [
   45, // FA Cup
   48, // League Cup (Caribo Cup)
   15, // FIFA Club World Cup
+  531, // UEFA Super Cup
+  10, // World Freindlies
+  32, // World Cup - Qualification Europe
+  30, // World Cup - Qualification Asia
+  29, // World Cup - Qualification Africa
+  34, //World Cup - Qualification South America
+  33, // World Cup - Qualification Oceania
+  31, // World Cup - Qualification CONCACAF
 ];
