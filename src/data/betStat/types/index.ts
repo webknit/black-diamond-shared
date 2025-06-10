@@ -52,6 +52,7 @@ export interface BetStat {
         oddsHigherLeagueResetTacticBalance1_3x: number;
         oddsHigherLeagueResetTacticPot1_3x: number;
         date: Date;
+        matchIds: string[];
       }
     ];
     // per_goals

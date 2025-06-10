@@ -57,6 +57,12 @@ export const betStatSchema = new Schema(
           oddsHigherLeagueResetTacticBalance1_3x: { type: Number },
           oddsHigherLeagueResetTacticPot1_3x: { type: Number },
           date: { type: Date },
+          matchIds: [
+            {
+              type: Schema.Types.ObjectId,
+              ref: "Fixture",
+            },
+          ],
         },
       ],
       based_on_prev: [
