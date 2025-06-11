@@ -28,6 +28,42 @@ export const accountSchema = new Schema(
     expenses: {
       type: Array,
     },
+    balanceHistoryDay: [
+      {
+        date: {
+          type: Date,
+          required: true,
+        },
+        balance: {
+          type: Number,
+          required: true,
+        },
+      },
+    ],
+    balanceHistoryWeek: [
+      {
+        date: {
+          type: Date,
+          required: true,
+        },
+        balance: {
+          type: Number,
+          required: true,
+        },
+      },
+    ],
+    balanceHistoryMonth: [
+      {
+        date: {
+          type: Date,
+          required: true,
+        },
+        balance: {
+          type: Number,
+          required: true,
+        },
+      },
+    ],
   },
   { timestamps: true }
 );

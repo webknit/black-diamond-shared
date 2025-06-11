@@ -7,4 +7,7 @@ export interface Account {
   deposits: any[];
   expenseTotal: number;
   expenses: any[];
+  balanceHistoryDay: { date: Date; balance: number }[];
+  balanceHistoryWeek: { date: Date; balance: number }[];
+  balanceHistoryMonth: { date: Date; balance: number }[];
 }
