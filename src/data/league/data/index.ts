@@ -29,7 +29,7 @@ export const LEAGUE_ID_LIST = [
   98, // J1 League Japan
   292, // K League 1
   //333, // Ukraine premier league
-  128, // Argentine Primera División
+  128, // Liga Profesional Argentina
   169, // China super league
   233, // Egypt premier leaguye
   262, // Liga MX Mexico
@@ -51,6 +51,9 @@ export const LEAGUE_ID_LIST = [
   307, // saudi pro league
   210, // HNL Croatian Football League
   186, // Algeria Ligue 1
+  411, // Cameroon Elite One
+  259, // Canadian Championship
+  239, // Primera A Colombia
   2, // UEFA Champions League
   3, // UEFA Europa League
   1, //World Cup
