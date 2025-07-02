@@ -35,7 +35,7 @@ export const LEAGUE_ID_LIST = [
   262, // Liga MX Mexico
   244, // Veikkausliiga finland
   164, // Iceland
-  281, // Peru Primera División
+  281, // Peru Primera División/ Liga 1
   203, // Turkey Süper Lig
   365, // Virsliga Latvia
   357, // Ireland Premier division
@@ -72,4 +72,7 @@ export const LEAGUE_ID_LIST = [
   34, //World Cup - Qualification South America
   33, // World Cup - Qualification Oceania
   31, // World Cup - Qualification CONCACAF
+  525, // UEFA Champions League Women
+  743, // UEFA Championship - Women (Euros)
+  698, // FA Women's Cup
 ];
