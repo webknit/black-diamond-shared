@@ -55,6 +55,8 @@ export const LEAGUE_ID_LIST = [
   259, // Canadian Championship
   239, // Primera A Colombia
   95, // Segunda Liga portugal
+  99, // J2 League Japan
+
   2, // UEFA Champions League
   3, // UEFA Europa League
   1, //World Cup
