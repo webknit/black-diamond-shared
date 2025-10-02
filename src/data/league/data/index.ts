@@ -57,6 +57,8 @@ export const LEAGUE_ID_LIST = [
   95, // Segunda Liga portugal
   99, // J2 League Japan
   380, // Hong kong premier league
+  340, // V League 1 vietnam
+  419, // Azerbaijan Premyer Liqa
 
   2, // UEFA Champions League
   3, // UEFA Europa League
@@ -65,6 +67,7 @@ export const LEAGUE_ID_LIST = [
   8, //World Cup - Women
   5, // UEFA Nations League
   848, // UEFA Europa Conference League
+  17, // AFC Champions League
   45, // FA Cup
   48, // League Cup (Caribo Cup)
   15, // FIFA Club World Cup
