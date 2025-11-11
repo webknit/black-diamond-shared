@@ -28,15 +28,16 @@ export const LEAGUE_ID_LIST = [
   207, // Switz super league
   98, // J1 League Japan
   292, // K League 1
-  //333, // Ukraine premier league
+  333, // Ukraine premier league
   128, // Liga Profesional Argentina
   169, // China super league
   233, // Egypt premier leaguye
   262, // Liga MX Mexico
   244, // Veikkausliiga finland
-  164, // Iceland
+  164, // Iceland§
   281, // Peru Primera División/ Liga 1
   203, // Turkey Süper Lig
+  332, // Slovakia Super Liga
   365, // Virsliga Latvia
   357, // Ireland Premier division
   106, // Polish Ekstraklasa
@@ -46,6 +47,7 @@ export const LEAGUE_ID_LIST = [
   344, // Bolivia Primera División
   323, // Indian Super League
   274, // Indonesia Liga 1
+  172, // Bulgaria First League
   274, // Algeria Ligue 1
   368, // singapore premier league
   307, // saudi pro league
@@ -59,6 +61,11 @@ export const LEAGUE_ID_LIST = [
   380, // Hong kong premier league
   340, // V League 1 vietnam
   419, // Azerbaijan Premyer Liqa
+  275, // Indonesian Liga 2
+  284, // Romania Liga 2
+  240, // Colombia Premera B
+  99, // J2 League Japan
+  120, // Denmark 1st Division
 
   2, // UEFA Champions League
   3, // UEFA Europa League
@@ -69,6 +76,7 @@ export const LEAGUE_ID_LIST = [
   848, // UEFA Europa Conference League
   17, // AFC Champions League
   45, // FA Cup
+  46, // EFL Throphy
   48, // League Cup (Caribo Cup)
   15, // FIFA Club World Cup
   531, // UEFA Super Cup
