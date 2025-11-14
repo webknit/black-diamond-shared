@@ -53,6 +53,7 @@ export const LEAGUE_ID_LIST = [
   307, // saudi pro league
   210, // HNL Croatian Football League
   186, // Algeria Ligue 1
+  276, //Kenya Premier League
   411, // Cameroon Elite One
   259, // Canadian Championship
   239, // Primera A Colombia
