@@ -67,6 +67,10 @@ export const LEAGUE_ID_LIST = [
   240, // Colombia Premera B
   99, // J2 League Japan
   120, // Denmark 1st Division
+  327, // Erovnuli Liga Georgia
+  301, // Saudi pro league
+  307, // Saudi Pro league
+  305, // Qatar Stars League
 
   2, // UEFA Champions League
   3, // UEFA Europa League
