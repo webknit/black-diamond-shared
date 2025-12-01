@@ -71,6 +71,11 @@ export const LEAGUE_ID_LIST = [
   301, // Saudi pro league
   307, // Saudi Pro league
   305, // Qatar Stars League
+  363, // Ethiopia Premier League
+  284, // Romania Liga 2
+  173, // Bulgaria Second League
+  318, // Cyprus 1. Division
+  204, // 1. Lig Turkey
 
   2, // UEFA Champions League
   3, // UEFA Europa League
