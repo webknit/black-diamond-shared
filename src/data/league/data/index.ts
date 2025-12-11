@@ -98,6 +98,7 @@ export const LEAGUE_ID_LIST = [
   33, // World Cup - Qualification Oceania
   31, // World Cup - Qualification CONCACAF
   18, // AFC Cup (AFC Champions League Two
+  860, //Arab Cup
 
   525, // UEFA Champions League Women
   743, // UEFA Championship - Women (Euros)
