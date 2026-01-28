@@ -18,6 +18,8 @@ type BetStatsResult = {
   anyTeamDefensive?: number;
   checkBothTeams?: boolean;
   date: Date;
+  averageOdds: number;
+  totalOddsSum: number;
 };
 
 export interface BetStat {

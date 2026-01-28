@@ -103,6 +103,8 @@ export const betStatSchema = new Schema(
           anyTeamDefensive: { type: Number },
           checkBothTeams: { type: Boolean },
           date: { type: Date },
+          averageOdds: { type: Number, required: true },
+          totalOddsSum: { type: Number, required: true },
         },
       ],
     ],
