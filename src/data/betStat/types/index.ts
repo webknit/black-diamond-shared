@@ -1,8 +1,28 @@
 import { BetTypes } from "../../bet/types";
 import { League } from "../../league";
 
+type BetStatsResult = {
+  totalBettableFixtures: number;
+  totalWins: number;
+  totalLosses: number;
+  winpc: number;
+  balance: number;
+  kitty: number;
+  roi: number;
+  profitPerBet: number;
+  name: string;
+  goalKey: "over0_5" | "over1_5" | "over2_5" | string;
+  goals: number;
+  minOdds: number;
+  anyTeamLowScoring?: number;
+  anyTeamDefensive?: number;
+  checkBothTeams?: boolean;
+  date: Date;
+};
+
 export interface BetStat {
   betType: BetTypes;
+  betStats: BetStatsResult[][];
   betWins: {
     overall: {
       count: number;
@@ -29,7 +49,7 @@ export interface BetStat {
         resetTacticBalanceOverOdds1_3x: number;
         resetTacticPotOverOdds1_3x: number;
         placingEveryBet: number;
-      }
+      },
     ];
     per_league: [
       {
@@ -38,7 +58,7 @@ export interface BetStat {
         averageOdds: number;
         resetTacticBalance: number;
         resetTacticPot: number;
-      }
+      },
     ];
     betting_on_odds_higher_league_percent: [
       {
@@ -53,7 +73,7 @@ export interface BetStat {
         oddsHigherLeagueResetTacticPot1_3x: number;
         date: Date;
         matchIds: string[];
-      }
+      },
     ];
     // per_goals
     // gf, ga, combined
@@ -61,13 +81,13 @@ export interface BetStat {
       {
         name: string;
         winPercent: number;
-      }
+      },
     ];
     based_on_team_pos: [
       {
         name: string;
         winPercent: number;
-      }
+      },
     ];
   };
 }

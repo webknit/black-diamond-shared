@@ -77,7 +77,35 @@ export const betStatSchema = new Schema(
           winPercent: { type: Number },
         },
       ],
+      bet_stats: [
+        {
+          type: Schema.Types.ObjectId,
+          ref: "BetStatEntry",
+        },
+      ],
     },
+    betStats: [
+      [
+        {
+          totalBettableFixtures: { type: Number, required: true },
+          totalWins: { type: Number, required: true },
+          totalLosses: { type: Number, required: true },
+          winpc: { type: Number, required: true },
+          balance: { type: Number, required: true },
+          kitty: { type: Number, required: true },
+          roi: { type: Number, required: true },
+          profitPerBet: { type: Number, required: true },
+          name: { type: String, required: true },
+          goalKey: { type: String, required: true },
+          goals: { type: Number, required: true },
+          minOdds: { type: Number, required: true },
+          anyTeamLowScoring: { type: Number },
+          anyTeamDefensive: { type: Number },
+          checkBothTeams: { type: Boolean },
+          date: { type: Date },
+        },
+      ],
+    ],
   },
-  { timestamps: true }
+  { timestamps: true },
 );
