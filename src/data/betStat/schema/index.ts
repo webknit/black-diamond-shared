@@ -105,6 +105,21 @@ export const betStatSchema = new Schema(
           date: { type: Date },
           averageOdds: { type: Number, required: true },
           totalOddsSum: { type: Number, required: true },
+          fixtures: [
+            {
+              type: Schema.Types.ObjectId,
+              ref: "Fixture",
+            },
+          ],
+          leagues: [
+            {
+              league: {
+                type: Schema.Types.ObjectId,
+                ref: "League",
+              },
+              percent: { type: Number },
+            },
+          ],
         },
       ],
     ],
