@@ -111,15 +111,6 @@ export const betStatSchema = new Schema(
               ref: "Fixture",
             },
           ],
-          leagues: [
-            {
-              league: {
-                type: Schema.Types.ObjectId,
-                ref: "League",
-              },
-              percent: { type: Number },
-            },
-          ],
         },
       ],
     ],
