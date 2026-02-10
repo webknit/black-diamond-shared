@@ -21,6 +21,13 @@ type BetStatsResult = {
   averageOdds: number;
   totalOddsSum: number;
   fixtures: string[];
+  leagues: [
+    {
+      league: string;
+      avPercent: number;
+      avOdds: number;
+    },
+  ];
 };
 
 export interface BetStat {
