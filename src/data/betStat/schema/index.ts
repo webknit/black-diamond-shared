@@ -121,6 +121,9 @@ export const betStatSchema = new Schema(
               avOdds: { type: Number },
             },
           ],
+          singleBetStrategy: {
+            balance: { type: Number },
+          },
         },
       ],
     ],

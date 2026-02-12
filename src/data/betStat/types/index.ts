@@ -28,6 +28,9 @@ type BetStatsResult = {
       avOdds: number;
     },
   ];
+  singleBetStrategy: {
+    balance: 100;
+  };
 };
 
 export interface BetStat {
