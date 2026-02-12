@@ -29,7 +29,9 @@ type BetStatsResult = {
     },
   ];
   singleBetStrategy: {
-    balance: 100;
+    balance: number;
+    roi: number;
+    profitPerBet: number;
   };
 };
 

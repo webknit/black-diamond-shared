@@ -123,6 +123,8 @@ export const betStatSchema = new Schema(
           ],
           singleBetStrategy: {
             balance: { type: Number },
+            roi: { type: Number },
+            profitPerBet: { type: Number },
           },
         },
       ],
