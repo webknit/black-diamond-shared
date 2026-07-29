@@ -32,5 +32,8 @@ export const teamSchema = new Schema(
       },
     ],
   },
-  { timestamps: true }
+  { timestamps: true },
 );
+
+teamSchema.index({ id: 1 }, { unique: true });
+teamSchema.index({ name: 1 });
