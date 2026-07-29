@@ -107,5 +107,18 @@ export const fixtureSchema = new Schema(
     //   type: Schema.Types.Mixed,
     // },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
+
+fixtureSchema.index({ "fixture.date": 1 });
+fixtureSchema.index({ "fixture.status.short": 1 });
+fixtureSchema.index({ "fixture.id": 1 });
+fixtureSchema.index({ "league.id": 1 });
+fixtureSchema.index({ "league.country": 1 });
+
+fixtureSchema.index({ "fixture.date": 1, "fixture.status.short": 1 });
+fixtureSchema.index({ "fixture.date": 1, "league.id": 1 });
+fixtureSchema.index({ "fixture.date": 1, "league.country": 1 });
+
+fixtureSchema.index({ "teams.home.id": 1 });
+fixtureSchema.index({ "teams.away.id": 1 });

@@ -34,5 +34,9 @@ export const leagueSchema = new Schema<League>(
       type: Number,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
+
+leagueSchema.index({ id: 1 }, { unique: true });
+leagueSchema.index({ country: 1 });
+leagueSchema.index({ name: 1 });

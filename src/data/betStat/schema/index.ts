@@ -1,5 +1,4 @@
 import { Schema } from "mongoose";
-import { av } from "vitest/dist/chunks/reporters.D7Jzd9GS";
 
 export const betStatSchema = new Schema(
   {
@@ -198,3 +197,7 @@ export const betStatSchema = new Schema(
   },
   { timestamps: true },
 );
+
+betStatSchema.index({ betType: 1 });
+betStatSchema.index({ updatedAt: -1 });
+betStatSchema.index({ betType: 1, totalsLastCalculated: -1 });

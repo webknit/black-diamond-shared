@@ -55,5 +55,14 @@ export const betSchema = new Schema(
       type: Number,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
+
+betSchema.index({ createdAt: -1 });
+betSchema.index({ fixture: 1 });
+betSchema.index({ betType: 1 });
+betSchema.index({ result: 1 });
+
+betSchema.index({ createdAt: -1, betType: 1 });
+betSchema.index({ createdAt: -1, result: 1 });
+betSchema.index({ fixture: 1, betType: 1 });
