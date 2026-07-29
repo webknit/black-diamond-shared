@@ -129,6 +129,72 @@ export const betStatSchema = new Schema(
         },
       ],
     ],
+    // ✅ ADD THIS NEW FIELD
+    totals: [
+      {
+        name: {
+          type: String,
+          required: true,
+        },
+        date: {
+          type: Date,
+        },
+        checkBothTeams: {
+          type: Boolean,
+        },
+        anyTeamLowScoring: {
+          type: Number,
+        },
+        anyTeamDefensive: {
+          type: Number,
+        },
+        totalBettableFixtures: {
+          type: Number,
+          default: 0,
+        },
+        totalWins: {
+          type: Number,
+          default: 0,
+        },
+        totalLosses: {
+          type: Number,
+          default: 0,
+        },
+        balance: {
+          type: Number,
+          default: 0,
+        },
+        totalOddsSum: {
+          type: Number,
+          default: 0,
+        },
+        singleBetBalance: {
+          type: Number,
+          default: 0,
+        },
+        winpc: {
+          type: Number,
+          default: 0,
+        },
+        averageOdds: {
+          type: Number,
+          default: 0,
+        },
+        profitPerBet: {
+          type: Number,
+          default: 0,
+        },
+        roi: {
+          type: Number,
+          default: 0,
+        },
+      },
+    ],
+
+    // ✅ ADD THIS FIELD TO TRACK WHEN TOTALS WERE LAST CALCULATED
+    totalsLastCalculated: {
+      type: Date,
+    },
   },
   { timestamps: true },
 );

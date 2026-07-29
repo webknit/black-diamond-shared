@@ -105,6 +105,27 @@ export interface BetStat {
       },
     ];
   };
+  // ADD THIS NEW FIELD:
+  totals: [
+    {
+      name: String;
+      date: Date; // ✅ Add date to each total entry
+      checkBothTeams: Boolean;
+      anyTeamLowScoring: Number;
+      anyTeamDefensive: Number;
+      totalBettableFixtures: Number;
+      totalWins: Number;
+      totalLosses: Number;
+      balance: Number;
+      totalOddsSum: Number;
+      singleBetBalance: Number;
+      winpc: Number;
+      averageOdds: Number;
+      profitPerBet: Number;
+      roi: Number;
+    },
+  ];
+  totalsLastCalculated: Date;
 }
 
 /*
