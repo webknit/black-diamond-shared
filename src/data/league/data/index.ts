@@ -44,6 +44,7 @@ export const LEAGUE_ID_LIST = [
   283, // Romania Liga 1
   218, // Austria Bundesliga
   119, // Denmark Superliga
+  479, // Canadian prem league
   344, // Bolivia Primera División
   323, // Indian Super League
   274, // Indonesia Liga 1
