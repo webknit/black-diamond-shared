@@ -1,5 +1,5 @@
 export const LEAGUE_ID_LIST = [
-  39, // premier league
+  39, // pPremier league
   78, //Bundesliga 1
   140, // La Liga
   135, // Serie A
@@ -58,20 +58,22 @@ export const LEAGUE_ID_LIST = [
   259, // Canadian Championship
   239, // Primera A Colombia
   95, // Segunda Liga portugal
-  99, // J2 League Japan
   380, // Hong kong premier league
   340, // V League 1 vietnam
   419, // Azerbaijan Premyer Liqa
-  275, // Indonesian Liga 2
-  284, // Romania Liga 2
-  240, // Colombia Premera B
   120, // Denmark 1st Division
   327, // Erovnuli Liga Georgia
   301, // Saudi pro league
   305, // Qatar Stars League
-  363, // Ethiopia Premier League
+
+  99, // J2 League Japan
   173, // Bulgaria Second League
   318, // Cyprus 1. Division
+  240, // Colombia Premera B
+  275, // Indonesian Liga 2
+  284, // Romania Liga 2
+
+  363, // Ethiopia Premier League
   204, // 1. Lig Turkey
 
   2, // UEFA Champions League
