@@ -49,7 +49,6 @@ export const LEAGUE_ID_LIST = [
   323, // Indian Super League
   274, // Indonesia Liga 1
   172, // Bulgaria First League
-  274, // Algeria Ligue 1
   368, // singapore premier league
   307, // saudi pro league
   210, // HNL Croatian Football League
@@ -66,14 +65,11 @@ export const LEAGUE_ID_LIST = [
   275, // Indonesian Liga 2
   284, // Romania Liga 2
   240, // Colombia Premera B
-  99, // J2 League Japan
   120, // Denmark 1st Division
   327, // Erovnuli Liga Georgia
   301, // Saudi pro league
-  307, // Saudi Pro league
   305, // Qatar Stars League
   363, // Ethiopia Premier League
-  284, // Romania Liga 2
   173, // Bulgaria Second League
   318, // Cyprus 1. Division
   204, // 1. Lig Turkey
